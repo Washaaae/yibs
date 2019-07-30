@@ -1,0 +1,38 @@
+p {
+    color: blue;
+} 
+
+a {
+    color: coral;
+
+}
+
+img {
+    border: 10px dashed green;
+    margin: 10px;
+    font-family: Arial;
+    padding: 5px
+    display: flex
+
+}
+<div id="hlavni box">
+        <li> byt ci nebyt</li>
+        background-image: url(https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjrnfKhoNrjAhUSaFAKHc41BTIQjRx6BAgBEAQ&url=https%3A%2F%2Fbarvy-vlasy.heureka.cz%2Fcrazy-color-barva-na-vlasy-rose-gold%2F&psig=AOvVaw31UXi_Y_rhDPUN4pbJSGxT&ust=1564493945724462');
+        <li>nevim co me to napadlo sorry</li>
+        <li>im uncreative sorry </li>
+        <a href="http://totaljerkface.com/happy_wheels.tjf" target="_blanc">
+            <img src="images/download.jpg" alt="alternative text">
+    </div>
+
+
+    </a>
+    <div id="pata">
+        <a href="https://www.ea.com/cs-cz/games/the-sims/the-sims-4/pc/store/mac-pc-download-base-game-standard-edition"
+            target="_blanc">surprise </a>
+    </div>
+
+   body {
+       display: flex
+        flex-direction:row 
+
+    }
