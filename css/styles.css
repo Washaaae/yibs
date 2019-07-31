@@ -1,0 +1,11 @@
+body {
+    background-image: url(images/free-luxury-wallpaper-24132-24794-hd-wallpapers.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+img {
+    width:450px;
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+}
