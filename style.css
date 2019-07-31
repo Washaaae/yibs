@@ -86,3 +86,13 @@ img {
         transform: none;
     }
 }
+
+.container{
+    display:flex;
+    -webkit-flex-flow: row wrap;
+
+}
+.item{
+    width: 50%;
+  height: 50%;
+}
