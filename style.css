@@ -1,7 +1,17 @@
+p {
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+
 body {
     background-color: black;
     background-size: 100%;
     background-repeat: no-repeat;
+    color: white;
 }
 img {
     width:450px;
