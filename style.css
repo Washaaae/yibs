@@ -97,9 +97,9 @@ margin: auto;
 .container{
     display:flex;
     -webkit-flex-flow: row wrap;
-
+    justify-content: space-around;
 }
 .item{
-    width: 50%;
-  height: 50%;
+    width: 45%;
+  height: 45%;
 }
