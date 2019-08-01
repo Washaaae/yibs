@@ -37,7 +37,7 @@ img {
 .zmena{
 margin: auto;
  width:80%;
- text-align: center;
+ /* text-align: center; */
  font-size: 1em;
 } 
 
