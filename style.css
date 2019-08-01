@@ -35,10 +35,16 @@ img {
 }
 
 .zmena{
-margin: auto;
- width:80%;
- /* text-align: center; */
- font-size: 1em;
+    margin: auto;
+    width:80%;
+    font-size: 1em;
+} 
+
+.zm3na{
+    margin: auto;
+    width:80%;
+    font-size: 1em;
+    text-align: center;
 } 
 
 .topnav {
@@ -99,7 +105,12 @@ margin: auto;
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
 }
+
 .item{
     width: 45%;
   height: 45%;
+}
+
+#dialog-message p {
+    color: black;
 }

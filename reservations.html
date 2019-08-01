@@ -4,176 +4,93 @@
     <meta charset="UTF-8">
     <title>LUXET HOTEL - reservations</title>
     <link rel="stylesheet" href="style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker({
+                changeMonth: true,
+                changeYear: true
+            });
+
+            $("#dialog-message").dialog({
+                autoOpen: false,
+                modal: true,
+                buttons: {
+                    Ok: function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+
+            $("#send").click(function () {
+                $("#dialog-message").dialog('open');
+            });
+        });
+    </script>
 </head>
 
 <body>
-
-
-    </ul>
-    <br>
-    <br>
-    <h1></h1>
-    <br>
     <img src="images/skks.jpg" />
     <br>
     <div class="about">
         <div id="page">
-            <div id="page">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <style>
-                    body {
-                        margin: 0;
-                        font-family: Arial, Helvetica, sans-serif;
-                    }
+            <!-- Top navigation -->
+            <div class="topnav">
 
-                    .topnav {
-                        position: relative;
-                        overflow: hidden;
-                        background-color: goldenrod;
-                    }
+                <!-- Centered link -->
+                <div class="topnav-centered">
+                    <a href="reservations.html" class="active">RESERVATIONS</a>
+                </div>
 
-                    .topnav a {
-                        float: left;
-                        color: black;
-                        text-align: center;
-                        padding: 14px 16px;
-                        text-decoration: none;
-                        font-size: 17px;
-                    }
+                <!-- Left-aligned links (default) -->
+                <a href="homepage.html">HOME</a>
+                <a href="contact.HTML">CONTACT</a>
 
-                    .topnav a:hover {
-                        background-color: #ddd;
-                        color: black;
-                    }
-
-                    .topnav a.active {
-                        background-color: white;
-                        color: black;
-
-                    }
-
-                    .topnav-centered a {
-                        float: none;
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                    }
-
-                    .topnav-right {
-                        float: right;
-                    }
-
-
-                    @media screen and (max-width: 600px) {
-
-                        .topnav a,
-                        .topnav-right {
-                            float: none;
-                            display: block;
-                        }
-
-                        .topnav-centered a {
-                            position: relative;
-                            top: 0;
-                            left: 0;
-                            transform: none;
-                        }
-                    }
-                </style>
-                </head>
-
-                <body>
-
-                    <!-- Top navigation -->
-                    <div class="topnav">
-
-                        <!-- Centered link -->
-                        <div class="topnav-centered">
-                            <a href="reservations.html" class="active">RESERVATIONS</a>
-                        </div>
-
-                        <!-- Left-aligned links (default) -->
-                        <a href="homepage.html">HOME</a>
-                        <a href="contact.HTML">CONTACT</a>
-
-                        <!-- Right-aligned links -->
-                        <div class="topnav-right">
-                            <a href="pricelistt.html">PRICELIST</a>
-
-                        </div>
-
-                    </div>
-
-                    <div style="padding-left:16px">
-
-                    </div>
-                    <div class="obsah">
-                        <div class="zmena">
-                            <h2> Book a reservation</h2>
-                            <h3>We will contact you shortly to confirm your reservation and offer further details.
-                            </h3>
-                        </div>
-                    </div>
+                <!-- Right-aligned links -->
+                <div class="topnav-right">
+                    <a href="pricelistt.html">PRICELIST</a>
+                </div>
             </div>
         </div>
-        <script>
-            <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                    <title>jQuery UI Datepicker - Display month &amp; year menus</title>
-                    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-                        <link rel="stylesheet" href="/resources/demos/style.css">
-                            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <script>
-                                $( function() {
-                                    $("#datepicker").datepicker({
-                                        changeMonth: true,
-                                        changeYear: true
-                                    });
-        } );
-        </script>
+    </div>
 
-        <body>
-            <div class="zmena">
-            <p>Name and surname: <input type="text" id="datepicker"></p>
+    <div id="dialog-message" title="Reservation Successful">
+        <p>
+            <span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
+            Your reservation has been successfully sent.
+        </p>
+    </div>
 
-            <body>
+    <div class="obsah">
+        <div class="zm3na">
+            <h2> Book a reservation</h2>
+            <h3>We will contact you shortly to confirm your reservation and offer further details.
+            </h3>
+        </div>
+    </div>
 
-                    <p>Phone number: <input type="text" id="datepicker"></p <body>
-                    <p> Email address: <input type="text" id="datepicker"></p>
+    <div class="zm3na">
+        <p>Name and surname: <input type="text"></p>
 
-                    <body>
-                        <p> Boarding time: <input type="text" id="datepicker"></p>
+        <p>Phone number: <input type="text"></p>
+        <p> Email address: <input type="text"></p>
 
-                        <body>
-                            <p> The number of dodgs, the age and breed: <input type="text" id="datepicker"></p>
+        <p> Boarding time: <input type="text" id="datepicker"></p>
 
-                            <body>
-                                <p> Pet's name/pets' names: <input type="text" id="datepicker"></p>
+        <p> The number of dodgs, the age and breed: <input type="text"></p>
 
-                                <body>
-                                    <p> Pet description (attitude to strangers and other pets): <input type="text"
-                                            id="datepicker"></p>
+        <p> Pet's name/pets' names: <input type="text"></p>
 
-                                    <body>
-                                        <p> Additional services (webcams, training, socialization): <input type="text"
-                                                id="datepicker"></p>
-              <div class="zmena">
-                <input type="submit" value="SEND" class="ui-button ui-corner-all ui-widget" role="button">
-              </div>
-              
-              
-                </div>
-            
+        <p> Pet description (attitude to strangers and other pets): <input type="text"></p>
 
-            </body>
-        </body>
-</body>
-</body>
-</body>
-</body>
-</body>
-</body>
+        <p> Additional services (webcams, training, socialization): <input type="text"></p>
+        <div class="zm3na">
+            <input id="send" type="submit" value="SEND" class="ui-button ui-corner-all ui-widget" role="button">
+        </div>
+    </div>
 
 </html>
